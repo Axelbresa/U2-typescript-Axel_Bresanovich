@@ -1,3 +1,20 @@
-//  11. Interface y clases
-// Crea una interfaz Shape que tenga un método area() que devuelve un número. Luego, crea una clase Circle que implemente esta interfaz y calcule el área de un
-// círculo.
+interface Shape {
+    area(): number;
+}
+
+class Circle implements Shape {
+    private radius: number; 
+
+    constructor(radius: number) {
+        this.radius = radius;
+    }
+
+    area(): number {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+}
+
+let myCircle = new Circle(5);
+
+// Calcular y mostrar el área del círculo
+console.log("La area del circulo: " + myCircle.area());
