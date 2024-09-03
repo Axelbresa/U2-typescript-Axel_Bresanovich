@@ -16,3 +16,6 @@ class Car{
     }
 }
 
+
+let carro=new Car("toyota")
+console.log(carro)

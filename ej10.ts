@@ -3,8 +3,19 @@
 // batteryLife (vida de la batería) de tipo número. Añade un método charge() que
 // imprima un mensaje diciendo que el coche se está cargando.
 
+class Car_4{
+    make:string;
 
-class ElectricCar extends Car{
+    constructor(make:string){
+        this.make=make
+    }
+
+    drive():void{
+        console.log("Driving a " + this.make)
+    }
+}
+
+class ElectricCar extends Car_4{
     private batteryLife: number; // Propiedad adicional
 
     constructor(make: string, batteryLife: number) {
@@ -18,3 +29,5 @@ class ElectricCar extends Car{
     
 }
 
+let carro_bateria=new ElectricCar("Toyota", 90)
+console.log(carro_bateria)

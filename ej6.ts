@@ -4,7 +4,7 @@
 
 
 function greet(name:string){
-    return "Saludos " + name + "un gusto porfin conocerte"
+    return "Saludos " + name + " un gusto porfin conocerte"
 }
 
-greet("Axel")
+console.log(greet("Axel"))

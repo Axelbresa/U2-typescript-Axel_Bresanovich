@@ -7,5 +7,4 @@ function add(num1:number, num2:number){
     return "suma total: " + suma_total
 }
 
-add(13, 20 )
-
+console.log(add(13, 20 ))
